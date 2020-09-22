@@ -50,7 +50,7 @@ After back and forth fix as shown above, your explorer folder should be ready fo
 
 ## Copy the NENG settings/logo and port forward to public
 
-Copy the NENG log file and setting files as example here. You can modify and change port, password to tailor your needs. 
+Copy the NENG logo file and setting file as example here. You can modify and change full node/mongodb user/password, port, etc to tailor to your needs. 
 
 You can setup a port forward in your home router for 3001 port to be visable to public. There are also free DNS or Dynamic DNS providers 
 that allow a domain URL to point to your home IPs for this purpose. 
