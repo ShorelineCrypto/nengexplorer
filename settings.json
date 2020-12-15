@@ -5,12 +5,12 @@
 */
 {
   // name your instance!
-  "title": "NewEnglandcoin Explorer",
+  "title": "Nengcoin Explorer",
 
   "address": "127.0.0.1:3001",
 
   // coin name
-  "coin": "NewEnglandcoin",
+  "coin": "Nengcoin",
 
   // coin symbol
   "symbol": "NENG",
