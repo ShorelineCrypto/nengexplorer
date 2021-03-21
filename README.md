@@ -11,22 +11,22 @@ http://nengexplorer.mooo.com:3001/
 
 ## Explorer software
 
-#### iquidus explorer - 1.6.1
+#### iquidus explorer - 1.6.2-legacy
 
-The latest commit of iquidus explorer does not work with NENG.  Earlier version commit was used instead at:
-https://github.com/iquidus/explorer/commits/bf99bb56eb4f0437c59d54a424882c2f839ca521
-
+The latest commit of iquidus explorer does not work with NENG.  Earlier version '1.6.2-legacy' branch was used instead at:
+https://github.com/iquidus/explorer/tree/1.6.2-legacy
 
 ```
-  git clone https://github.com/iquidus/explorer.git explorer
-  cd explorer
-  git checkout bf99bb56eb4f0437c59d54a424882c2f839ca521
+  git clone https://github.com/iquidus/explorer.git nengexplorer
+  cd nengexplorer
+  git checkout 1.6.2-legacy
+  git pull 
 
 ```
 
 #### Other software and working versions
 
-* mongodb 4.4.1
+* mongodb v4.2.13 
 * node.js v12.18.4
 
 Follow guide here for installing mongodb in various version of Ubuntu linux:
