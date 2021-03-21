@@ -53,4 +53,29 @@ After back and forth fix as shown above, your explorer folder should be ready fo
 Copy the NENG logo file and setting file as example here. You can modify and change full node/mongodb user/password, port, etc to tailor to your needs. 
 
 You can setup a port forward in your home router for 3001 port to be visable to public. There are also free DNS or Dynamic DNS providers 
-that allow a domain URL to point to your home IPs for this purpose. 
+that allow a domain URL to point to your home IPs for this purpose.
+
+## Issues in syncing/operating explorer
+
+(1) Common error:  "Script already running.."
+simply remove the tmp/index.pid file and you will be able to run the script.
+
+When explorer or wallet shut down abnormally, this error will come 
+and explorer won't refresh to latest blocks.
+
+(2) Common error: "Cannot read property 'length' of undefined" error from scripts/sync.js"
+
+Follow this issue to fix the mongodb/explorer database:
+https://github.com/iquidus/explorer/issues/29
+
+```
+newmight2015 commented on Jan 19, 2016
+node scripts/sync.js index reindex then node scripts/sync.js index update
+
+@iquidus
+ 
+Owner
+iquidus commented on Jan 23, 2016
+also check you have txindex=1 set in your coins .config or are launching the coin daemon with the -txindex flag.
+```
+ 
