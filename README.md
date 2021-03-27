@@ -3,7 +3,7 @@
 This guide explains step by step at high level to self host an explorer for Nengcoin (NENG) in a linux server such as Ubuntu 18.04.
 
 Explorer requires a full node of NENG with "-txindex" flag.  You could use the same full node that you run Cheetah_Cpuminer on.
-The explorer runs with mongodb that also needs about 1G of disk for storing the blockchain content in its database. 
+The explorer runs with mongodb that also needs about 3G of disk for storing the blockchain content in its database. 
 
 ## Example of Working NENG Explorer
 
