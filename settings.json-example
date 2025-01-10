@@ -54,7 +54,7 @@
   },
 
   // confirmations
-  "confirmations": 40,
+  "confirmations": 96,
 
   // language settings
   "locale": "locale/en.json",
@@ -112,9 +112,9 @@
   // low flag: greater than this value flagged yellow
   // high flag: greater than this value flagged red
   "movement": {
-    "min_amount": 100,
-    "low_flag": 1000,
-    "high_flag": 5000
+    "min_amount": 1000000,
+    "low_flag": 10000000,
+    "high_flag": 500000000
   },
 
   // twitter, facebook, googleplus, youtube
