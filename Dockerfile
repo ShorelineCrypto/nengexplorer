@@ -5,11 +5,12 @@ RUN apt-get update && \
 
 ENV HOME=/root
 WORKDIR /root
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-ENV NVM_DIR=/root/.nvm
 
-RUN echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"'  >> .bashrc
-# RUN nvm install 12.18.4
+# Installing Node
+SHELL ["/bin/bash", "--login", "-i", "-c"]
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+RUN source /root/.bashrc && nvm install 12.18.4
+SHELL ["/bin/bash", "--login", "-c"]
 
 RUN git clone https://github.com/ShorelineCrypto/nengexplorer.git  nengexplorer-slc
 RUN git clone  https://github.com/iquidus/explorer.git  nengexplorer
