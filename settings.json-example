@@ -1492,13 +1492,13 @@
     // supply: Determine how to calculate current coin supply
     //         NOTE: The supply is always retrieved right before doing a normal index sync, reindex or check
     //         Valid options:
-            COINBASE : retrieve the total coins sent from the coinbase (Often used for PoW coins)
+    //         COINBASE : retrieve the total coins sent from the coinbase (Often used for PoW coins)
     //         GETINFO : retrieved from getinfo rpc cmd (Often used for PoS coins)
     //         GETBLOCKCHAININFO : retrieved from getblockchaininfo rpc cmd
     //         HEAVY: retrieved from getsupply rpc cmd (The "blockchain_specific.heavycoin.enabled" setting must be set to true and the "blockchain_specific.heavycoin.api_cmds.getsupply" setting must be set up correctly for this option to work properly)
     //         BALANCES : get the supply by running a query on the addresses collection and summing up all positive balances (potentially a long running query for blockchains with tons of addresses)
     //         TXOUTSET : retrieved from gettxoutsetinfo rpc cmd
-    "supply": "GETINFO",
+    "supply": "COINBASE",
     // elastic_stack_size: If a "RangeError: Maximum call stack size exceeded" error occurs during a block sync (which can happen when dealing with large transactions with many addresses), the sync script will automatically be reloaded using a larger stack size value which increases memory usage based on this value.
     //                     NOTE: If the first reload of the sync script still doesn't have enough memory to handle processing of a large transaction, the sync is smart enough to continue increasing the stack size by this value again and again until it finishes processing all blocks and then returns back to the default amount of memory for future blocks.
     //                           It is recommended to leave this value alone unless you know what you are doing.
@@ -1639,9 +1639,9 @@
     // getvotelist: Returns an object with details regarding the current vote list
     "getvotelist": "masternodelist votes",
     // getmasternodecount: Returns a json object containing the total number of masternodes on the network
-   // "getmasternodecount": "getmasternodecount",
+    "getmasternodecount": "getmasternodecount",
     // getmasternodelist: Returns a json array containing status information for all masternodes on the network
-   // "getmasternodelist": "listmasternodes",
+    "getmasternodelist": "listmasternodes",
     // verifymessage: Verify a signed message. Must accept the following arguments:
     //                address: The wallet address to use for the signature
     //                signature: The signature provided by the signer in base 64 encoding
