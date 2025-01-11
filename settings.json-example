@@ -176,7 +176,7 @@
       // home_link_logo: The path to a logo image that is displayed on page header when the "shared_pages.page_header.home_link" setting is set to "logo"
       //                 If the home_link_logo is left blank or not set to a valid file, the "shared_pages.page_header.home_link" = "logo" setting will automatically default to displaying the original "shared_pages.logo" instead of the "shared_pages.page_header.home_link_logo"
       //                 NOTE: The path root is /public
-      "home_link_logo": "/img/logo.png",
+      "home_link_logo": "/img/header-logo.png",
       // home_link_logo_height: The max-height value of the "shared_pages.page_header.home_link" logo image (value in px, only valid if "shared_pages.page_header.home_link" = 'logo')
       "home_link_logo_height": 50,
       // panels: a collection of settings that pertain to the panels displayed on page header of all pages (NOTE: you can show/hide the entire group of panels on each page independently by changing the show_panels value in the settings for each page)
@@ -1202,14 +1202,14 @@
       // blockhash: This value can be any valid block hash from your coins blockchain
       //            For many bitcoin clones you can use the following cmd to get the block hash for a given block height: coin-cli getblockhash 64152
       //            NOTE: This value is only used to build example api links on the api page from the /api/getblock api for example
-      "blockhash": "775d67da29dd6553268061f86368d06654944dd5d5c61db4c97e4c7960c11a74",
+      "blockhash": "ff9811c3e8e047ea35de31a973006e3dff9976671bd539b519af201e5cb049a9",
       // txhash: This value can be any valid transaction hash from your coins blockchain
       //         For many bitcoin clones you can use the following cmd to find a list of tx hashes for a given block hash: coin-cli getblock 000000001ba119a0f6d49ebabd83343b125d7ee3d3184b1b41d6a7f2051153eb
       //         NOTE: This value is only used to build example api links on the api page from the /api/getrawtransaction api for example
-      "txhash": "6cb3babd256de253f926f10bc8574dadf0a3e2fc8380107b81eb07c67d1e73ed",
+      "txhash": "f4642353a1bab35b8b4e7b9bd294df85e96f4b84bb040e124b431731a19d2634",
       // address: This value can be any valid wallet address from your coins blockchain that has received at least 1 or more coin transactions
       //          NOTE: This value is only used to build example api links on the api page from the /ext/getaddress api for example
-      "address": "ELvb8AZRgHmdsDnD1HYFwbSY4UkPhoECCW"
+      "address": "NeGjqVoDtX3FF5HYgFrXvaNERc7DwMvSeU"
     },
     // public_apis: a collection of settings that pertain to the public api command system
     //              NOTE: Disabling any of these apis will remove the api definition from the api page and will return a "This method is disabled" msg if the api endpoint is called.
