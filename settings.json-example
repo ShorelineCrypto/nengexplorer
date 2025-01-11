@@ -100,7 +100,7 @@
     // theme: Change the look & feel of the explorer with a unique theme. Uses bootswatch themes (https://bootswatch.com)
     //        Valid options: Cerulean, Cosmo, Cyborg, Darkly, Exor, Flatly, Journal, Litera, Lumen, Lux, Materia, Minty, Morph, Pulse, Quartz, Sandstone, Simplex, Sketchy, Slate, Solar, Spacelab, Superhero, United, Vapor, Yeti, Zephyr
     //        (see /public/css/themes for available themes)
-    "theme": "Exor",
+    "theme": "Cerulean",
     // page_title: The text to display at the end of the HTML title tag and also displayed in the page header when the "shared_pages.page_header.home_link" setting is set to "title"
     "page_title": "Nengcoin Explorer",
     // favicons: a collection of image or icon files that are displayed in a browser window/tab and serve as branding for your website. Their main purpose is to help visitors locate your page easier when they have multiple tabs open
@@ -1492,7 +1492,7 @@
     // supply: Determine how to calculate current coin supply
     //         NOTE: The supply is always retrieved right before doing a normal index sync, reindex or check
     //         Valid options:
-    //         COINBASE : retrieve the total coins sent from the coinbase (Often used for PoW coins)
+            COINBASE : retrieve the total coins sent from the coinbase (Often used for PoW coins)
     //         GETINFO : retrieved from getinfo rpc cmd (Often used for PoS coins)
     //         GETBLOCKCHAININFO : retrieved from getblockchaininfo rpc cmd
     //         HEAVY: retrieved from getsupply rpc cmd (The "blockchain_specific.heavycoin.enabled" setting must be set to true and the "blockchain_specific.heavycoin.api_cmds.getsupply" setting must be set up correctly for this option to work properly)
