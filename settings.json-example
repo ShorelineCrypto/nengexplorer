@@ -651,6 +651,20 @@
           // image_path: The path to an image file that will be displayed for this social link
           //             NOTE: The path root is /public
           "image_path": "/img/coingecko.png"
+        },
+        {
+          // enabled: Enable/disable this particular social link (true/false)
+          //          If set to false, the link will be completely inaccessible
+          "enabled": true,
+          // tooltip_text: Social link tooltips are always prefixed by the "coin.name" setting followed by the text from this tooltip_text setting. Ex: Exor Github
+          "tooltip_text": "Komodo Wallet",
+          // url: The exact url that the social link should navigate to
+          "url": "https://github.com/KomodoPlatform/komodo-wallet-desktop/releases",
+          // fontawesome_class: A string of css classes, separated by spaces that can be used to display a fontawesome icon for this social link. See https://fontawesome.com/ for more info
+          "fontawesome_class": "fa-brands fa-github",
+          // image_path: The path to an image file that will be displayed for this social link
+          //             NOTE: The path root is /public
+          "image_path": "/img/komodowallet.png"
         }
       ],
       // Customize the height of the social media links in the footer for the following screen sizes:
@@ -666,7 +680,7 @@
       "social_link_percent_height_mobile": 40,
       // powered_by_text: Customize the "powered by" text in the center of the footer with some custom html
       //                  NOTE: Add the keyword {explorer_version} to display the current version number of the explorer
-      "powered_by_text": "<a class='nav-link poweredby' href='https://github.com/team-exor/eiquidus' target='_blank'>eIquidus v{explorer_version}</a>"
+      "powered_by_text": "<a class='nav-link poweredby' href='https://github.com/ShorelineCrypto/nengexplorer' target='_blank'>nengexplorer powerby eIquidus v{explorer_version}</a>"
     }
   },
 

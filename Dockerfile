@@ -21,4 +21,4 @@ RUN git clone  https://github.com/team-exor/eiquidus.git
 WORKDIR /root/eiquidus
 RUN source /root/.bashrc && export PATH="$PATH:/root/.nvm/versions/node/v20.9.0/bin" && npm install --only=prod
 RUN git clone https://github.com/ShorelineCrypto/nengexplorer.git  nengexplorer
-RUN cp -r nengexplorer/* .
+RUN cp -r nengexplorer/* .  && cp settings.json-example settings.json
