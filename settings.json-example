@@ -212,7 +212,7 @@
           // display_order: Determine which order this panel is shown from 1-5
           //                1 = far left panel, 5 = far right panel
           //                The panel will be disabled with a value of 0
-          "display_order": 3
+          "display_order": 2
         },
         // masternodes_panel: a collection of settings that pertain to the masternode panel which displays a count of online and unreachable masternodes (only applicable to masternode coins)
         "masternodes_panel": {
@@ -232,7 +232,7 @@
           // display_order: Determine which order this panel is shown from 1-5
           //                1 = far left panel, 5 = far right panel
           //                The panel will be disabled with a value of 0
-          "display_order": 1
+          "display_order": 3
         },
         // price_panel: a collection of settings that pertain to the price panel which displays the current market price as determined by the markets_page.market_price value
         "price_panel": {
@@ -890,11 +890,11 @@
       //                       Set to 0 to disable automatic reloading of table data
       "reload_table_seconds": 45,
       // min_amount: The minimum number of coins that need to be received in a single transaction to show up on the movement page
-      "min_amount": 1000000,
+      "min_amount": 50000,
       // low low_warning_flag: Flag all transactions in yellow/orange that are sent with coin amounts above this value
-      "low_warning_flag": 10000000,
+      "low_warning_flag": 500000,
       // high_warning_flag: Flag all transactions in red that are sent with coin amounts above this value
-      "high_warning_flag": 500000000
+      "high_warning_flag": 5000000
     }
   },
 
@@ -1599,6 +1599,8 @@
     { "symbol": "eth", "id": "ethereum" },
     { "symbol": "usdt", "id": "tether" },
     { "symbol": "ltc", "id": "litecoin" },
+    { "symbol": "doge", "id": "dogecoin" },
+    { "symbol": "chta", "id": "cheetahcoin" },
     { "symbol": "neng", "id": "nengcoin" }
   ],
 
