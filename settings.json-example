@@ -661,10 +661,24 @@
           // url: The exact url that the social link should navigate to
           "url": "https://github.com/KomodoPlatform/komodo-wallet-desktop/releases",
           // fontawesome_class: A string of css classes, separated by spaces that can be used to display a fontawesome icon for this social link. See https://fontawesome.com/ for more info
-          "fontawesome_class": "fa-brands fa-github",
+          "fontawesome_class": "",
           // image_path: The path to an image file that will be displayed for this social link
           //             NOTE: The path root is /public
           "image_path": "/img/komodowallet.png"
+        },
+        {
+          // enabled: Enable/disable this particular social link (true/false)
+          //          If set to false, the link will be completely inaccessible
+          "enabled": true,
+          // tooltip_text: Social link tooltips are always prefixed by the "coin.name" setting followed by the text from this tooltip_text setting. Ex: Exor Github
+          "tooltip_text": "Electrum-CHTA Wallet",
+          // url: The exact url that the social link should navigate to
+          "url": "https://github.com/ShorelineCrypto/electrum-chta/releases",
+          // fontawesome_class: A string of css classes, separated by spaces that can be used to display a fontawesome icon for this social link. See https://fontawesome.com/ for more info
+          "fontawesome_class": "",
+          // image_path: The path to an image file that will be displayed for this social link
+          //             NOTE: The path root is /public
+          "image_path": "/img/electrum64.png"
         }
       ],
       // Customize the height of the social media links in the footer for the following screen sizes:
