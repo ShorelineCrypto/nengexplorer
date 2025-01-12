@@ -16,9 +16,9 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | b
 RUN source /root/.bashrc && nvm install 20.9.0
 SHELL ["/bin/bash", "--login", "-c"]
 
-RUN git clone  https://github.com/team-exor/eiquidus.git  nengexplorer
+RUN git clone  https://github.com/team-exor/eiquidus.git
 
-WORKDIR /root/nengexplorer
+WORKDIR /root/eiquidus
 RUN source /root/.bashrc && export PATH="$PATH:/root/.nvm/versions/node/v20.9.0/bin" && npm install --only=prod
-RUN git clone https://github.com/ShorelineCrypto/nengexplorer.git  nengexplorer-slc
-RUN cp -r nengexplorer-slc/* .
+RUN git clone https://github.com/ShorelineCrypto/nengexplorer.git  nengexplorer
+RUN cp -r nengexplorer/* .
