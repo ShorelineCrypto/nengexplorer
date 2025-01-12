@@ -232,7 +232,7 @@
           // display_order: Determine which order this panel is shown from 1-5
           //                1 = far left panel, 5 = far right panel
           //                The panel will be disabled with a value of 0
-          "display_order": 4
+          "display_order": 3
         },
         // price_panel: a collection of settings that pertain to the price panel which displays the current market price as determined by the markets_page.market_price value
         "price_panel": {
@@ -278,11 +278,11 @@
         "logo_panel": {
           // enabled: Enable/disable the logo panel (true/false)
           //          If set to false, the logo panel will be completely inaccessible
-          "enabled": true,
+          "enabled": false,
           // display_order: Determine which order this panel is shown from 1-5
           //                1 = far left panel, 5 = far right panel
           //                The panel will be disabled with a value of 0
-          "display_order": 3
+          "display_order": 0
         },
         // spacer_panel_1: a collection of settings that pertain to the 1st spacer panel which allows inserting a blank space into the top panels
         //                 NOTE: spacer panels are only visible on desktop and tablet screen sizes and are hidden on mobile screens
@@ -671,9 +671,9 @@
           //          If set to false, the link will be completely inaccessible
           "enabled": true,
           // tooltip_text: Social link tooltips are always prefixed by the "coin.name" setting followed by the text from this tooltip_text setting. Ex: Exor Github
-          "tooltip_text": "Electrum-CHTA Wallet",
+          "tooltip_text": "Electrum-NENG Wallet",
           // url: The exact url that the social link should navigate to
-          "url": "https://github.com/ShorelineCrypto/electrum-chta/releases",
+          "url": "https://github.com/ShorelineCrypto/electrum-neng/releases",
           // fontawesome_class: A string of css classes, separated by spaces that can be used to display a fontawesome icon for this social link. See https://fontawesome.com/ for more info
           "fontawesome_class": "",
           // image_path: The path to an image file that will be displayed for this social link
@@ -1057,7 +1057,7 @@
   "markets_page": {
     // enabled: Enable/disable the markets pages (true/false)
     //          If set to false, all market pages will be completely inaccessible
-    "enabled": false,
+    "enabled": true,
     // show_panels: Determine whether to show the panels configured in the shared_pages.page_header section across the top of this page (true/false)
     "show_panels": false,
     // show_nethash_chart: Determine whether to show the network hashrate chart configured in the shared_pages.network_charts.nethash_chart section across the top of this page (true/false)
@@ -1129,12 +1129,12 @@
       "nonkyc": {
         // enabled: Enable/disable the nonkyc exchange (true/false)
         //          If set to false, the nonkyc page will be completely inaccessible and no market data will be downloaded for this exchange
-        "enabled": false,
+        "enabled": true,
         // trading_pairs: An array of market trading pair symbols
         //                You can add as many trading pairs as necessary
         //                All entries must specify your coins symbol as it is displayed on the exchange, followed by a slash (/) and ending with the symbol of the market or asset that is being traded against
         //                Ex: "LTC/BTC", "LTC/USDT", "LTC/ETH"
-        "trading_pairs": [ "LTC/USDT" ]
+        "trading_pairs": [ "NENG/USDT", "NENG/DOGE" ]
       },
       // poloniex: a collection of settings that pertain to the poloniex exchange
       "poloniex": {
@@ -1194,9 +1194,9 @@
     "default_exchange": {
       // exchange_name: The name of the default exchange must exactly match the name of an exchange in the "exchanges" setting above
       //                See the list of supported exchanges above for the list of supported exchange names
-      "exchange_name": "freiexchange",
+      "exchange_name": "nonkyc",
       // trading_pair: The name of the trading pair for the default exchange must exactly match the name of a trading pair from the "exchanges" setting above
-      "trading_pair": "LTC/BTC"
+      "trading_pair": "NENG/DOGE"
     }
   },
 
