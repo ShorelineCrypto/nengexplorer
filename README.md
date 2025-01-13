@@ -39,7 +39,7 @@ You can pull a public docker image with below command:
 Alternatively at first step, you can build nengexplorer:latest image with below command:
 
 ```
-  cd ~
+  cd ~/nengexplorer
   docker-compose up -d
   
 ```
