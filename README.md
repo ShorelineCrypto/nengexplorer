@@ -18,16 +18,16 @@ You can follow documentation for understanding docker setup steps or run the sam
 
 #### git clone nengexplorer
 
-
+The mongodb database folder is cross mounted at "~/nengexplorerdb" while "~/mongo_backup" is mounted as backup folder for mongodb. 
 
 ```
   cd ~
-  git clone https://github.com/iquidus/explorer.git nengexplorer
+  git clone https://github.com/ShorelineCrypto/nengexplorer.git
   mkdir nengexplorerdb mongo_backup
 
 ```
 
-#### start/build/stop docker image and container
+#### build docker image and start container
 
 You can pull a public docker image with below command:
 
