@@ -83,6 +83,6 @@ The above completed mongodb database user account setup. Run below to start expl
    npm start
 ```
 
-Now your nengexplorer should be running at your http://Your Hostname or IP:3001 web URL.
+Now your nengexplorer should be running at your "http://YourHostnameorIP:3001" web URL.
 The initial sync will take about overnight time for full Nengcoin blockchain update from beginning. 
 
