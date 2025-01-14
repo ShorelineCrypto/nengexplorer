@@ -16,14 +16,15 @@ https://github.com/team-exor/eiquidus
 eIquidus github documentation has tons of instructions to configure mongodb and explorer software. The nengexplorer has automated most of steps with docker method.
 You can follow documentation for understanding docker setup steps or run the same software without docker. 
 
-#### git clone nengexplorer
+#### git clone nengexplorer, prepare host folders
 
-The mongodb database folder is cross mounted at "~/nengexplorerdb" while "~/mongo_backup" is mounted as backup folder for mongodb. 
+Docker shared several volumes between host and container. The mongodb database folder is cross mounted from "~/nengexplorerdb" while "~/mongo_backup" is mounted as backup folder for mongodb.
+Host machine ".nengcoin" folder is cross mounted inside container for running full node. 
 
 ```
   cd ~
   git clone https://github.com/ShorelineCrypto/nengexplorer.git
-  mkdir nengexplorerdb mongo_backup
+  mkdir nengexplorerdb mongo_backup .nengcoin
 
 ```
 
