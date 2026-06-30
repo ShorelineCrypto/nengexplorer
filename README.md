@@ -80,9 +80,15 @@ The above completed mongodb database user account setup. Run below to start expl
    cp nengcoin.conf ~/.nengcoin/
    ~/nengcoin_2.4.0_x86_64_linux-gnu/nengcoind
    nohup bash loop_sync.sh &
-   npm start
+   npm run start-pm2
 ```
 
 Now your nengexplorer should be running at your "http://YourHostnameorIP:3001" web URL.
-The initial sync will take about overnight time for full Nengcoin blockchain update from beginning. 
+The initial sync will take about overnight time for full Nengcoin blockchain update from beginning.
+
+To stop explorer:
+```
+  docker exec -it nengexplorer /bin/bash
+  npm run stop-pm2
+```
 
