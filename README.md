@@ -53,11 +53,6 @@ to build manually:
   docker build -t nengexplorer .
 ```
 
-to stop container:
-```
-docker-compose down
-```
-
 #### config/run mongodb/nengexplorer
 
 The mongodb is built in the docker image, you can perform below to configure a working explore and mongodb user account.
@@ -79,16 +74,34 @@ The above completed mongodb database user account setup. Run below to start expl
 ```
    cp nengcoin.conf ~/.nengcoin/
    ~/nengcoin_2.4.0_x86_64_linux-gnu/nengcoind
-   nohup bash loop_sync.sh &
+
    npm run start-pm2
 ```
+<a href="https://www.npmjs.com/package/pm2" rel="nofollow">PM2</a> is a process manager for Node.js applications with a built-in load balancer. To avoid overloading machine, say if you have 8 CPU, only use 4 CPU for explorer cluster jobs:
+```
+pm2 list
+pm2 scale explorer   4
+```
+
+Run `pm2 log` or `pm2 monit` to check the health of container for more information.  Finally, run below to sync blocks:
+```
+   nohup bash loop_sync.sh &
+```
+
 
 Now your nengexplorer should be running at your "http://YourHostnameorIP:3001" web URL.
 The initial sync will take about overnight time for full Nengcoin blockchain update from beginning.
 
-To stop explorer:
+To stop explorer while still running container:
 ```
   docker exec -it nengexplorer /bin/bash
   npm run stop-pm2
+```
+
+Or completely shut down container:
+
+to stop container:
+```
+docker-compose down
 ```
 
