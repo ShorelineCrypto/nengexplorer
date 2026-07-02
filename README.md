@@ -80,10 +80,10 @@ The above completed mongodb database user account setup. Run below to start expl
 <a href="https://www.npmjs.com/package/pm2" rel="nofollow">PM2</a> is a process manager for Node.js applications with a built-in load balancer. To avoid overloading machine, say if you have 8 CPU, only use 4 CPU for explorer cluster jobs:
 ```
 pm2 list
-pm2 scale explorer   4
+pm2 scale explorer 4
 ```
 
-Run `pm2 log` or `pm2 monit` to check the health of container for more information.  Finally, run below to sync blocks:
+Run `pm2 log` or `pm2 monit` to check the container health.  Finally, run below to load blockchain data into MongoDB:
 ```
    nohup bash loop_sync.sh &
 ```
